@@ -1,6 +1,6 @@
-import { Database } from '../database/Database';
+import { Database } from '../database/connection';
 import { IdentityReconciliationService } from '../services/IdentityReconciliationService';
-import { LinkPrecedence } from '../models/Contact';
+import { LinkPrecedence } from '../types';
 
 describe('IdentityReconciliationService', () => {
   let database: Database;

@@ -1,6 +1,6 @@
 import express from 'express';
 import { Database } from './database/connection';
-import { createIdentityRoutes, errorHandler } from './routes/identityRoutes';
+import { createIdentityRoutes, errorHandler } from './routes/identify';
 
 const app = express();
 const PORT = process.env.PORT || 3000;

@@ -1,4 +1,4 @@
-import express, { Request, Response, NextFunction } from 'express';
+import { Request, Response, NextFunction } from 'express';
 import { Database } from '../database/connection';
 import { IdentityReconciliationService } from '../services/IdentityReconciliationService';
 import { RequestValidator, ValidationError } from '../utils/validators';
@@ -69,13 +69,3 @@ export const errorHandler = (
     message: 'An unexpected error occurred',
   });
 };
-
-// Create the identity routes
-export function createIdentityRoutes(database: Database): express.Router {
-  const router = express.Router();
-  const controller = new IdentityController(database);
-
-  router.post('/identify', controller.identify.bind(controller));
-
-  return router;
-}

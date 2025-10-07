@@ -2,6 +2,8 @@
 
 A robust Node.js TypeScript web service that implements customer identity reconciliation through a single POST endpoint. The service automatically links contacts when they share email addresses or phone numbers, creating a unified view of customer identities.
 
+🚀 **Live API**: https://bitespeed-assign-pxc3.onrender.com
+
 ## Features
 
 - **Smart Contact Linking**: Automatically links contacts sharing email addresses or phone numbers

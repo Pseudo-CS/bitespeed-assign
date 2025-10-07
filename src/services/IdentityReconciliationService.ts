@@ -1,5 +1,5 @@
-import { Database } from '../database/Database';
-import { Contact, CreateContactData, LinkPrecedence, IdentifyRequest, IdentifyResponse, ContactGroup } from '../models/Contact';
+import { Database } from '../database/connection';
+import { Contact, CreateContactData, LinkPrecedence, IdentifyRequest, IdentifyResponse, ContactGroup } from '../types';
 
 export class IdentityReconciliationService {
   private database: Database;

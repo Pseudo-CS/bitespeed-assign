@@ -1,4 +1,4 @@
-import { RequestValidator } from '../services/ValidationService';
+import { RequestValidator } from '../utils/validators';
 
 describe('ValidationService', () => {
   describe('validateIdentifyRequest', () => {

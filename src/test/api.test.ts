@@ -1,6 +1,6 @@
 import request from 'supertest';
 import express from 'express';
-import { Database } from '../database/Database';
+import { Database } from '../database/connection';
 import { createIdentityRoutes, errorHandler } from '../routes/identityRoutes';
 
 describe('POST /identify', () => {
