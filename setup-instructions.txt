@@ -1,0 +1,43 @@
+# Complete Setup Script
+
+echo "=== GitHub Repository Setup ==="
+echo "1. Go to https://github.com and create a new repository:"
+echo "   - Name: customer-identity-reconciliation"
+echo "   - Description: Customer Identity Reconciliation Web Service"
+echo "   - Public repository"
+echo "   - Don't initialize with README (we have our own)"
+
+echo ""
+echo "2. After creating the repository, run these commands:"
+echo ""
+
+echo "# Add GitHub remote (replace 'yourusername' with your actual username)"
+echo "git remote add origin https://github.com/yourusername/customer-identity-reconciliation.git"
+echo ""
+
+echo "# Rename branch to main"
+echo "git branch -M main"
+echo ""
+
+echo "# Push to GitHub"
+echo "git push -u origin main"
+echo ""
+
+echo "=== Render Deployment Setup ==="
+echo "1. Go to https://render.com and sign up with GitHub"
+echo "2. Click 'New +' → 'Web Service'"
+echo "3. Connect your GitHub repository"
+echo "4. Use these settings:"
+echo "   - Build Command: npm install && npm run build"
+echo "   - Start Command: npm start"
+echo "   - Environment: Node"
+echo "   - Instance Type: Free"
+echo "5. Click 'Create Web Service'"
+echo ""
+
+echo "=== Testing Deployment ==="
+echo "After deployment, test with:"
+echo "curl https://your-app-name.onrender.com/health"
+echo "curl -X POST https://your-app-name.onrender.com/identify \\"
+echo "  -H 'Content-Type: application/json' \\"
+echo "  -d '{\"email\":\"test@example.com\"}'"
